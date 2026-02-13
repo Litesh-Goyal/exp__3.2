@@ -49,9 +49,9 @@ function Library() {
       <div className="book-list">
         {filteredBooks.map(book => (
           <div key={book.id} className="book-item">
-            <div>
-              <h3>{book.title}</h3>
-              <p>by {book.author}</p>
+            <div className="book-info">
+              <h3 className="book-title">{book.title}</h3>
+              <p className="book-author">by {book.author}</p>
             </div>
             <button className="remove-btn" onClick={() => removeBook(book.id)}>Remove</button>
           </div>
