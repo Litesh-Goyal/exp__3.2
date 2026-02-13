@@ -1,52 +1,101 @@
-/* Container fix */
 .library-container {
   max-width: 600px;
   margin: 40px auto;
   padding: 30px;
-  background: #ffffff !important; /* Force white background */
+  background-color: #ffffff !important;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Title visibility */
 .library-container h1 {
-  color: #2c3e50 !important;
+  color: #2c3e50;
   text-align: center;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
-/* Input fields fix */
-.search-section input, .add-section input {
-  background: #ffffff !important;
-  color: #333 !important; /* Text color inside input */
-  border: 1px solid #ccc !important;
+/* Search bar styling */
+.search-section input {
+  width: 100%;
   padding: 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
-/* Book Item text visibility */
-.book-item {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  background: #f9f9f9 !important;
-  border: 1px solid #eee !important;
-  color: #333 !important; /* Yeh line text ko visible karegi */
-  padding: 15px;
-  margin-bottom: 12px;
+/* Add section styling */
+.add-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.add-section input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #dcdfe6;
   border-radius: 8px;
 }
 
+.add-section button {
+  background-color: #007bff !important; /* Perfect Blue */
+  color: white !important;
+  border: none;
+  padding: 0 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-section button:hover {
+  background-color: #0056b3 !important;
+}
+
+/* Book List Styling */
+.book-item {
+  background-color: #ffffff;
+  border: 1px solid #ebeef5;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.book-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
 .book-title {
-  color: #2c3e50 !important; /* Dark Blue-Grey color */
   margin: 0;
-  font-size: 1.2rem;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .book-author {
   margin: 5px 0 0;
-  color: #555555 !important; /* Dark Grey */
-  color: #7f8c8d !important;
-  font-style: italic;
+  color: #606266;
+  font-size: 1rem;
+}
+
+/* Remove button styling */
+.remove-btn {
+  background-color: #ff4d4f !important; /* Perfect Red */
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #d9363e !important;
 }
