@@ -1,54 +1,49 @@
+/* Container fix */
 .library-container {
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px;
-  background: #f8faff;
+  padding: 30px;
+  background: #ffffff !important; /* Force white background */
   border-radius: 15px;
-  font-family: sans-serif;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* Title visibility */
+.library-container h1 {
+  color: #2c3e50 !important;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Input fields fix */
 .search-section input, .add-section input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-sizing: border-box;
+  background: #ffffff !important;
+  color: #333 !important; /* Text color inside input */
+  border: 1px solid #ccc !important;
+  padding: 12px;
 }
 
-.add-section {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.add-section button {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
+/* Book Item text visibility */
 .book-item {
-  background: white;
+  background: #f9f9f9 !important;
+  border: 1px solid #eee !important;
+  color: #333 !important; /* Yeh line text ko visible karegi */
   padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #eee;
+  border-radius: 8px;
 }
 
-.remove-btn {
-  background: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+.book-title {
+  margin: 0;
+  color: #2c3e50 !important;
+  font-size: 1.2rem;
+}
+
+.book-author {
+  margin: 5px 0 0;
+  color: #7f8c8d !important;
+  font-style: italic;
 }
