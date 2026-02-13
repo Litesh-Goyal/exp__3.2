@@ -3,7 +3,7 @@ function App() {
   return (
     <div style={{ 
       backgroundColor: '#e9ecef', 
-      minHeight: '100vh', 
+      // minHeight: '100vh', 
       width: '100vw',
       margin: 0,
       padding: '20px',
