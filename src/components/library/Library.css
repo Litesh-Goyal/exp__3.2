@@ -25,6 +25,8 @@
 
 /* Book Item text visibility */
 .book-item {
+  background-color: #ffffff !important;
+  color: #000000 !important;
   background: #f9f9f9 !important;
   border: 1px solid #eee !important;
   color: #333 !important; /* Yeh line text ko visible karegi */
@@ -37,13 +39,14 @@
 }
 
 .book-title {
+  color: #2c3e50 !important; /* Dark Blue-Grey color */
   margin: 0;
-  color: #2c3e50 !important;
   font-size: 1.2rem;
 }
 
 .book-author {
   margin: 5px 0 0;
+  color: #555555 !important; /* Dark Grey */
   color: #7f8c8d !important;
   font-style: italic;
 }
